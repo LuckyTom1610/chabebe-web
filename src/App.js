@@ -5,17 +5,26 @@ function App() {
     <div className="min-h-screen bg-gray-100 text-gray-900">
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center text-center p-6 h-[calc(100vh-4rem)]">
-        <img
-          src="/logo.png"
-          alt="Logo Chabebe"
-          className="h-40 object-contain mb-6"
-        />
-        <h1 className="text-4xl font-bold text-amber-700 mb-4">
-          Bienvenido a Chabebe
-        </h1>
-        <p className="text-lg text-gray-600">Donde las macetas hablan por ti 🌱</p>
-      </main>
+      <main
+  className="relative flex flex-col items-center justify-center text-center p-6 h-[calc(100vh-4rem)] bg-cover bg-center bg-no-repeat"
+  style={{ backgroundImage: "url('/fondo-chabebe.jpg')" }}
+>
+  {/* Capa de desenfoque y oscurecimiento */}
+  <div className="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-sm"></div>
+
+  {/* Contenido por encima */}
+  <div className="relative z-10">
+    <img
+      src="/logo.png"
+      alt="Logo Chabebe"
+      className="h-40 object-contain mb-6 mx-auto"
+    />
+    <h1 className="text-4xl font-bold text-amber-700 mb-4">
+      Bienvenido a Chabebe
+    </h1>
+    <p className="text-lg text-white">Donde las macetas hablan por ti 🌱</p>
+  </div>
+</main>
 
       <section className="bg-white py-12 px-6 text-center">
   <h2 className="text-3xl font-bold text-amber-700 mb-8">Nuestras Macetas</h2>
