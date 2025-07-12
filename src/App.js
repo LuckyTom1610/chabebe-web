@@ -7,7 +7,7 @@ function App() {
 
       <main
   className="relative flex flex-col items-center justify-center text-center p-6 h-[calc(100vh-4rem)] bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/fondo-chabebe.jpg')" }}
+  style={{ backgroundImage: "url('/fondo-chabeve.jpg')" }}
 >
   {/* Capa de desenfoque y oscurecimiento */}
   <div className="absolute inset-0 bg-black bg-opacity-30 backdrop-blur-sm"></div>
@@ -16,11 +16,11 @@ function App() {
   <div className="relative z-10">
     <img
       src="/logo.png"
-      alt="Logo Chabebe"
+      alt="Logo Chabeve"
       className="h-40 object-contain mb-6 mx-auto"
     />
     <h1 className="text-4xl font-bold text-amber-700 mb-4">
-      Bienvenido a Chabebe
+      Bienvenido a Chabeve
     </h1>
     <p className="text-lg text-white">Donde las macetas hablan por ti 🌱</p>
   </div>
