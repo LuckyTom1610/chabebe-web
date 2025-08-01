@@ -31,9 +31,10 @@ export default function Navbar() {
                 dropdownOpen === "catalogo" ? "opacity-100 visible" : "opacity-0 invisible"
               }`}
             >
-              <li className="px-4 py-2 hover:bg-green-50">Macetas Premium</li>
-              <li className="px-4 py-2 hover:bg-green-50">Nuevas Colecciones</li>
-              <li className="px-4 py-2 hover:bg-green-50">Personalizadas</li>
+              <li className="px-4 py-2 hover:bg-green-50">Macetas Pequeñas</li>
+              <li className="px-4 py-2 hover:bg-green-50">Macetas Grandes</li>
+              <li className="px-4 py-2 hover:bg-green-50">Set de Macetas</li>
+              <li className="px-4 py-2 hover:bg-green-50">Macetas con Plantas</li>
             </ul>
           </li>
 
@@ -129,9 +130,10 @@ export default function Navbar() {
               </button>
               {dropdownOpen === "catalogo" && (
                 <ul className="pl-4 mt-2 space-y-1">
-                  <li className="hover:text-green-600 cursor-pointer">Macetas Premium</li>
-                  <li className="hover:text-green-600 cursor-pointer">Nuevas Colecciones</li>
-                  <li className="hover:text-green-600 cursor-pointer">Personalizadas</li>
+                  <li className="hover:text-green-600 cursor-pointer">Macetas Pequeñas</li>
+                  <li className="hover:text-green-600 cursor-pointer">Macetas Grandes</li>
+                  <li className="hover:text-green-600 cursor-pointer">Sets de Macetas</li>
+                  <li className="hover:text-green-600 cursor-pointer">Macetas con Plantas</li>
                 </ul>
               )}
             </li>
