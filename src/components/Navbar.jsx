@@ -7,7 +7,14 @@ export default function Navbar() {
    return (
     <nav className="bg-white shadow-md fixed w-full z-20">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <div className="text-2xl font-semibold text-gray-800">Chabeve</div>
+        <div className="flex items-center space-x-2">
+  <img
+    src="/logo.png"
+    alt="Logo Chabeve"
+    className="h-10 w-auto"
+  />
+  <span className="text-2xl font-semibold text-gray-800">Chabeve</span>
+</div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-8 font-medium text-gray-700">
